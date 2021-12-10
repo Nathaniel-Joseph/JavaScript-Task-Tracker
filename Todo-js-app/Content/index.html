@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Task Tracker App</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="assets/Icons/all.min.css">
+    <link href="assets/SCSS/Style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="container">
+      <div class="lg-holder">
+        <div class="main-holder shadow">
+          <div class="header text-center">
+            <h3 class="text-dark text-uppercase fw-bold">My Task Tracker app</h3>
+            <div class="text-dark">
+              <small>Fill out the user inputs bellow to add a task.</small>
+            </div>
+          </div>
+
+          <div class="input_holder mt-4">
+            <div class="input_task_name">
+              <input type="text" class="form-control shadow text-dark" name="task name" id="taskName" placeholder="Task name">
+            </div>
+
+            <div class="input_task_date mt-3">
+              <input type="date" class="form-control shadow" name="task date" id="taskDate" placeholder="Date">
+            </div>
+
+            <div class="mt-3 submit_btn">
+              <button class="btn btn-success w-100 shadow" id="submitBtn">Submit</button>
+            </div>
+          </div>
+
+          <div class="task_holder mt-3">
+            <div class="header border-bottom border-dark">
+              <h5 class="text-dark">Added Tasks</h5>
+            </div>
+
+            <div class="task_content mt-3">
+              <ul class="list-unstyled">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/Icons/all.min.js"></script>
+    <script src="assets/App/APP.jS"></script>
+  </body>
+</html>
